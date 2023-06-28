@@ -38,3 +38,19 @@ function copiar(){
     let textarea = document.getElementById("inputTexto");
     textarea.focus();
 }
+
+function modoOscuro(){
+    var element = document.documentElement;
+    element.classList.toggle("darkMode");
+
+    let imagenLogo = document.getElementById("logo");
+    let imagenResultado = document.getElementById("imagenResultado");
+
+    if(element.classList.contains("darkMode")){
+        imagenLogo.src = "sources/LogoDark.png";
+        imagenResultado.src = "sources/ImagenPrincipalDark.png";
+    }else{
+        imagenLogo.src = "sources/Logo.png";
+        imagenResultado.src = "sources/ImagenPrincipal.png";
+    }
+}
