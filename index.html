@@ -14,7 +14,7 @@
     <body>
         <header>
             <img id="logo" src="sources/Logo.png" alt="Logo de Alura">
-            <button onclick="modoOscuro()">Dark</button>
+            <button class="botonDarkMode" title="Modo Oscuro" onclick="modoOscuro()"></button>
         </header>
         <main>
             <section class="entrada">
@@ -24,8 +24,8 @@
                     <p>Solo letras minúsculas y sin acentos.</p>
                 </div>
                 <div class="botones">
-                    <button id="encriptar" onclick="encriptar()">Encriptar</button>
-                    <button id="desencriptar" onclick="desencriptar()">Desencriptar</button>
+                    <button id="encriptar" title="Encriptar" onclick="encriptar()">Encriptar</button>
+                    <button id="desencriptar" title="Desencriptar" onclick="desencriptar()">Desencriptar</button>
                 </div>
             </section>
             <section class="resultado">
@@ -35,7 +35,7 @@
                     <h2>Ningún mensaje fue encontrado</h2>
                     <h3>Ingresa el texto que deseas encriptar o desencriptar</h3>
                 </div>
-                <button id="copiar" onclick="copiar()">Copiar</button>
+                <button id="copiar" title="Copiar" onclick="copiar()">Copiar</button>
             </section>
         </main>
         <script src="encriptador.js"></script>

@@ -1,4 +1,3 @@
-
 let mensaje = "";
 
 function ocultarElementos(){
@@ -20,7 +19,6 @@ function desencriptar(){
     let textarea = document.getElementById("inputTexto");
     if(textarea.value != ''){
         mensaje = textarea.value.replace(/enter/g,"e").replace(/imes/g,"i").replace(/ai/g,"a").replace(/ober/g,"o").replace(/ufat/g,"u");
-        /* textarea.innerText = mensaje; */
         let salidaMensaje = document.getElementById("mensajeCodificado");
         salidaMensaje.innerText = mensaje;
         ocultarElementos();
