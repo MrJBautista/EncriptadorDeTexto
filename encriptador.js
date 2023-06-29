@@ -45,10 +45,10 @@ function modoOscuro(){
     let imagenResultado = document.getElementById("imagenResultado");
 
     if(element.classList.contains("darkMode")){
-        imagenLogo.src = "sources/LogoDark.png";
-        imagenResultado.src = "sources/ImagenPrincipalDark.png";
+        imagenLogo.src = "LogoDark.png";
+        imagenResultado.src = "ImagenPrincipalDark.png";
     }else{
-        imagenLogo.src = "sources/Logo.png";
-        imagenResultado.src = "sources/ImagenPrincipal.png";
+        imagenLogo.src = "Logo.png";
+        imagenResultado.src = "ImagenPrincipal.png";
     }
 }
